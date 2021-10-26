@@ -41,7 +41,7 @@ parser.add_argument('--vectors', default="", help='path to file that contains fe
 parser.add_argument('--dependencies', default="", help='path to file that describes the dependency graph')
 parser.add_argument('--method', default="hdbscan", help='method for clustering: hdbscan (default) or fcm')
 parser.add_argument('--nclusters', default=45, type=int, help='number of clusters for FCM, ignored for HDBSCAN')
-args = parser.parse_args()
+args, unknown = parser.parse_known_args()
 fname_dep = getattr(args,"dependencies")
 fname_vec = getattr(args,"vectors")
 opt_method = getattr(args, "method")
