@@ -17,8 +17,30 @@ pip install --upgrade pip
 # install the required libraries
 pip install -r requirements.txt
 
-
-
+### Requirement
+numpy==1.14.3
+astroid==1.6.4
+cycler==0.10.0
+decorator==4.3.0
+hdbscan==0.8.13
+isort==4.3.4
+kiwisolver==1.0.1
+lazy-object-proxy==1.3.1
+matplotlib==2.2.2
+mccabe==0.6.1
+networkx==2.1
+pandas==0.23.0
+pylint==1.9.1
+pyparsing==2.2.0
+python-dateutil==2.7.3
+pytz==2018.4
+scikit-fuzzy==0.3.1
+scikit-learn==0.19.1
+scipy==1.1.0
+seaborn==0.8.1
+six==1.11.0
+sklearn==0.0
+wrapt==1.10.11
 
 
 
