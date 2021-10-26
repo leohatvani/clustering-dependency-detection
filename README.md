@@ -42,7 +42,12 @@ six==1.11.0
 sklearn==0.0
 wrapt==1.10.11
 
+### Packages
+conda install -c conda-forge scikit-fuzzy
+conda install -c conda-forge hdbscan
 
+pip install -U scikit-fuzzy
+pip install hdbscan
 
 
 ### Feature Vector Generation
