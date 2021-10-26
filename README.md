@@ -4,6 +4,25 @@ Automated Functional Dependency Detection from Natural Language Test Specificati
 ### Warning
 This is an academic prototype software and the authors are not responsible for any damage resulting from its use.
 
+### Installation
+```bash
+clone this repository
+cd clustering-dependency-detection
+
+# initiate a virtual environment
+python3 -m venv env
+source env/bin/activate
+# upgrade pip if needed
+pip install --upgrade pip
+# install the required libraries
+pip install -r requirements.txt
+
+
+
+
+
+
+
 ### Feature Vector Generation
 First transform your input documents into the CSV file format:
 ```csv
@@ -25,18 +44,7 @@ python export_vectors.py start --data_file_name input.csv --model_file_name inpu
 ```
 where xxxxxx should be replaced according to the results of running the Paragraph Vectors implementation.
 
-### Installation
-```bash
-clone this repository
-cd clustering-dependency-detection
-# initiate a virtual environment
-python3 -m venv env
-source env/bin/activate
-# upgrade pip if needed
-pip install --upgrade pip
-# install the required libraries
-pip install -r requirements.txt
-```
+
 
 ### Running
 Together with our code, we have included anonymized data that can be used to recreate the results that we have presented in our paper. There are two files `dataset_graph.csv` containing the description of the dependency graph between the test cases and the requirements and `dataset_vec.csv` containing the feature vectors of the input documents.
