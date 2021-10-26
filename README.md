@@ -49,6 +49,17 @@ conda install -c conda-forge hdbscan
 pip install -U scikit-fuzzy
 pip install hdbscan
 
+sudo apt-get install python3-tk
+or
+sudo dnf install python3-tkinter
+
+try:
+    # for Python2
+    from Tkinter import *   ## notice capitalized T in Tkinter 
+except ImportError:
+    # for Python3
+    from tkinter import *   ## notice lowercase 't' in tkinter here
+    
 
 ### Feature Vector Generation
 First transform your input documents into the CSV file format:
